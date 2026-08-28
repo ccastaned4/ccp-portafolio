@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder de proyecto destacado</title>
+  <desc id="desc">Composición arquitectónica abstracta en tonos neutros.</desc>
+  <rect width="1600" height="1100" fill="#d6d2c9"/>
+  <rect x="0" y="0" width="510" height="1100" fill="#b8b1a5"/>
+  <rect x="510" y="205" width="770" height="690" fill="#ece8df"/>
+  <rect x="680" y="355" width="430" height="540" fill="#5f625e"/>
+  <rect x="1280" y="0" width="320" height="1100" fill="#8b8880"/>
+  <path d="M0 895H1600" stroke="#242522" stroke-opacity=".22" stroke-width="2"/>
+  <path d="M510 205H1280M510 895H1280" stroke="#242522" stroke-opacity=".14" stroke-width="2"/>
+</svg>

@@ -78,3 +78,34 @@
 
 @media(max-width:1000px) and (min-width:761px){.home-page .home-intro,.home-page .project-wall{grid-template-columns:repeat(2,minmax(0,1fr))}.home-page .home-intro h1{grid-column:1/-1}.home-page .project-wall>*:not(.grid-guides){grid-column:auto/span 1}.home-page .project-wall>.wall-1,.home-page .project-wall>.wall-4,.home-page .project-wall>.wall-5,.home-page .project-wall>.wall-7,.home-page .project-wall>.wall-9,.home-page .project-wall>.wall-11,.home-page .project-wall>.wall-12,.home-page .project-wall>.wall-14,.home-page .project-wall>.wall-heading{grid-column:span 2}.grid-guides{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-guides i:nth-child(n+3){display:none}}
 @media(max-width:760px){.home-page .home-intro{display:block}.home-page .project-wall{display:grid;grid-template-columns:1fr;gap:5rem;border-top:1px solid rgb(21 21 21/.16)}.home-page .project-wall>*:not(.grid-guides){grid-column:1!important;margin-top:0}.home-page .wall-heading{min-height:13rem;padding:0}.home-page .wall-empty{display:none}.grid-guides{grid-template-columns:1fr}.grid-guides i:not(:first-child){display:none}}
+
+/* Portada con proyecto destacado */
+.home-page .home-intro{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(1.5rem,3vw,4rem);padding-top:clamp(7rem,10vw,9rem);padding-bottom:clamp(5rem,9vw,8rem);align-items:end}
+.hero-copy{grid-column:1/span 2;padding-bottom:clamp(2rem,5vw,5rem)}
+.home-page .hero-copy h1{margin:0;font-size:clamp(3.4rem,7vw,7.5rem);font-weight:500;letter-spacing:-.07em;line-height:.82;text-transform:uppercase}
+.home-page .hero-copy p{margin:clamp(1.75rem,3vw,3rem) 0 0;font-size:clamp(.72rem,1.1vw,.95rem);letter-spacing:.09em;line-height:1.5;text-transform:uppercase}
+.hero-copy p span{margin:0 .25em;color:var(--muted)}
+.featured-project{grid-column:3/span 2;display:block;align-self:start;cursor:pointer}
+.featured-image{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;background:#d6d2c9;transition:opacity .35s ease}
+.featured-project:hover .featured-image,.featured-project:focus-visible .featured-image{opacity:.94}
+.featured-meta{display:grid;grid-template-columns:1fr auto;gap:.2rem 1rem;padding-top:.8rem}
+.featured-meta p,.featured-meta h2,.featured-meta span{margin:0;font-size:.66rem;font-weight:400;line-height:1.45}
+.featured-meta p{grid-column:1/-1;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
+.featured-meta h2{font-size:clamp(.95rem,1.3vw,1.15rem)}
+.featured-meta span{color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+
+@media(max-width:900px) and (min-width:761px){.home-page .home-intro{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-copy{grid-column:1}.featured-project{grid-column:2}.home-page .hero-copy h1{font-size:clamp(3.2rem,8vw,5.5rem);overflow-wrap:anywhere}}
+@media(max-width:760px){.home-page .home-intro{display:flex;padding-top:6.5rem;padding-bottom:5rem;flex-direction:column;align-items:stretch}.featured-project{order:-1}.featured-image{aspect-ratio:4/3}.hero-copy{padding:0}.home-page .hero-copy h1{font-size:clamp(3.2rem,16vw,5.5rem)}.home-page .hero-copy p{display:flex;margin-top:1.5rem;flex-wrap:wrap;gap:.25rem}.hero-copy p span{margin:0}}
+
+/* Sistema reutilizable de placeholders */
+/* Para una imagen real individual, sustituye su background-image por url("assets/images/categoria/archivo.jpg"). */
+.placeholder{background-repeat:no-repeat;background-position:center;background-size:cover}
+.placeholder::after{display:none}
+.a1,.t3,.d5{background-image:url("assets/images/placeholders/placeholder-01.svg")}
+.a2,.t4,.d2{background-image:url("assets/images/placeholders/placeholder-02.svg")}
+.a3,.t6,.d8{background-image:url("assets/images/placeholders/placeholder-03.svg")}
+.a4,.t1,.d4{background-image:url("assets/images/placeholders/placeholder-04.svg")}
+.a5,.t2,.d6{background-image:url("assets/images/placeholders/placeholder-05.svg")}
+.a6,.t5,.d3{background-image:url("assets/images/placeholders/placeholder-06.svg")}
+.d1,.d7{background-image:url("assets/images/placeholders/placeholder-07.svg")}
+.d2,.d8{background-image:url("assets/images/placeholders/placeholder-08.svg")}
